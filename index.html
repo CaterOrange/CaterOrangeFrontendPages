@@ -1,63 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+<!-- Mirrored from demo.tutsflow.com/foodera/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 12:32:44 GMT -->
 <head>
-    <meta charset="UTF-8">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Foodera - Responsive Food Landing Page Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Deletion Request - CaterOrange</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        p {
-            font-size: 16px;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 10px;
-            color: #fff;
-            background-color: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.html">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- ICONS -->
+    <link href="../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ilmosys-icon.css">
+    <link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css">
+
+
+    <!-- THEME / PLUGIN CSS -->
+    <link rel="stylesheet" href="js/vendors/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
 </head>
-<body>
 
-    <h1>Data Deletion Request</h1>
-    <p>If you wish to request deletion of your data related to <strong>CaterOrange</strong>, please follow the steps below.</p>
+<body id="home">
+    <div class="body">
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar-inverse navbar-lg navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-brand brand"><img src="images/logo.png" alt="logo"></a>
+                    </div>
 
-    <h2>How to Request Data Deletion</h2>
-    <ol>
-        <li><strong>Google Form:</strong> Submit your request via the form below.</li>
-        <li><strong>Email Request:</strong> Send an email to <strong>tech@scaleorange.com</strong> with the subject "Data Deletion Request" and details of your request.</li>
-    </ol>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
 
-    <h2>Data That Will Be Deleted</h2>
-    <p>The following data will be permanently deleted:</p>
-    <ul>
-        <li>Personal Information (name, email, phone number)</li>
-    </ul>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right navbar-login">
+                            <li>
+                                 <a href="tel:1800789123"><span class="icon-call"></span> 1800 789 123</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown mm-menu">
+                                <a class="page-scroll" href="#home">Home</a>
+                            </li>
 
-    
-    <h2>Data Retention Policy</h2>
-    <p>Some data may be retained for legal, security, or analytical purposes and will be securely deleted after <strong>90 days</strong> if applicable.</p>
+                            <li class="dropdown mm-menu">
+                                <a class="page-scroll" href="#about">About Us</a>
+                            </li>
+							
+							<li class="dropdown mm-menu">
+                                <a class="page-scroll" href="#explore">Explore Foods</a>
+                            </li>
 
-    <h2>Submit Your Request</h2>
-    <p>Click the button below to fill out the data deletion request form.</p>
-    <a href="https://forms.gle/1MiNXDwgDa8nUoK49" class="button" target="_blank">Request Data Deletion</a>
+                            <li class="dropdown mm-menu">
+                                <a class="page-scroll" href="#reviews">Reviews</a>
+                            </li>
 
+                            <li class="dropdown mm-menu">
+                                <a class="page-scroll" href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Home -->
+        <div class="intro intro3">
+            <div class="container">
+                <div class="row center-content">
+                    <div class="col-md-5 col-sm-6">
+                        <h3>Good food choices are good investments.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum amet leo. </p>
+                        <div class="space30"></div>
+                        <div class="dual-btn">
+                            <a href="#explore" class="btn btn-lg btn-primary page-scroll">Order Now <span class="fa fa-shopping-basket"></span></a> &nbsp; &nbsp;
+                            <a href="#about" class="btn btn-lg btn-default btn-border page-scroll">Learn More <i class=" ilmosys-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-7 col-sm-6 no-padding">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Stats -->
+        <div id="stats2" class="bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <div class="stats2-info">
+                            <i class="icon-piggy"></i>
+                            <p><span class="count">1287</span>+</p>
+                            <h2>Savings</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="stats2-info">
+                            <i class="icon-photo"></i>
+                            <p><span class="count">5786</span>+</p>
+                            <h2>Photos</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="stats2-info">
+                            <i class="icon-rocket"></i>
+                            <p><span class="count">1440</span>+</p>
+                            <h2>Rockets</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="stats2-info">
+                            <i class="icon-world"></i>
+                            <p><span class="count">7110</span>+</p>
+                            <h2>Globes</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- About Us -->
+        <div id="about" class="container">
+            <!-- About Section 1 -->
+            <div class="intro intro-about2">
+                <div class="container">
+                    <div class="row center-content">
+                        <div class="col-md-7 ">
+                            <img src="images/features/1.png" class="pull-left img-responsive" alt="" />
+                        </div>
+                        <div class="col-md-5">
+                            <h3>We pride ourselves on making real food from the best ingredients.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
+							<a href="#" class="btn btn-lg btn-primary">Learn More <i class="icon-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section 2 -->
+            <div class="intro intro-about2">
+                <div class="container">
+                    <div class="row center-content">
+                        <div class="col-md-5">
+                            <h3>We make everything by hand with the best possible ingredients.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat tellus.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							
+							<ul class="list">
+							<li><i class="fa fa-check"></i> Etiam sed dolor ac diam volutpat.</li>
+							<li><i class="fa fa-check"></i> Erat volutpat aliquet imperdiet.</li>
+							<li><i class="fa fa-check"></i> purus a odio finibus bibendum.</li>
+							</ul>
+							
+							<div class="space30"></div>
+							<a href="#" class="btn btn-lg btn-primary">Learn More <i class="icon-arrow-right"></i></a>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="images/features/2.png" class="pull-left img-responsive" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space80"></div>
+
+
+        <div class="video-action">
+            <div class="row text-center">
+                <h1>When a man's stomach is full it makes no <br> difference whether he is rich or poor.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio <br>finibus bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
+                <br><br>
+                <a href="https://www.youtube.com/watch?v=bZx8rPd-PKQ" class="swipebox-video">
+                    <div class="intro-video-pop">
+                        <i class="fa fa-play"></i> Watch Our Story
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div id="explore" class="elements-content">
+            <div class="container">
+                <div class="about-inline text-center">
+                    <h3>Explore Our Foods </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts. Separated they live in Bookmarksgrove.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-product">
+                            <div class="img-wrap"><img src="images/foods/01.jpg" alt="img"></div>
+                            <div class="info-wrap">
+                                <h4 class="title">Rainbow Vegetable Sandwich</h4>
+                                <p class="desc"> Time: 15 - 20 Minutes | Serves: 1 </p>
+                                <div class="price-wrap h3">
+                                    <span class="price-new">$10.50</span> <del class="price-old">$11.70</del>
+                                </div>
+                            </div>
+                            <div class="bottom-wrap">
+                              <a href="#" class="btn btn-sm btn-primary float-right"  data-toggle="modal" data-target="#modalContactForm">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-product">
+                            <div class="img-wrap"><img src="images/foods/02.jpg" alt="img"></div>
+                            <div class="info-wrap">
+                                <h4 class="title">Vegetarian Burger</h4>
+                                <p class="desc"> Time: 30 - 45 Minutes | Serves: 1 </p>
+                                <div class="price-wrap h3">
+                                    <span class="price-new">$9.20</span> <del class="price-old">$10.50</del>
+                                </div>
+                            </div>
+                            <div class="bottom-wrap">
+                                <a href="#" class="btn btn-sm btn-primary float-right"  data-toggle="modal" data-target="#modalContactForm">Order Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-product">
+                            <div class="img-wrap"><img src="images/foods/03.jpg" alt="img"></div>
+                            <div class="info-wrap">
+                                <h4 class="title">Raspberry Stuffed French Toast</h4>
+                                <p class="desc"> Time: 10 - 15 Minutes | Serves: 1 </p>
+                                <div class="price-wrap h3">
+                                    <span class="price-new">$12.50</span> <del class="price-old">$13.20</del>
+                                </div>
+                            </div>
+                            <div class="bottom-wrap">
+                              <a href="#" class="btn btn-sm btn-primary float-right"  data-toggle="modal" data-target="#modalContactForm">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space100"></div>
+
+        <!-- Testimonials -->
+        <div id="reviews" class="testimonials-color">
+            <div class="container">
+                <div class="about-inline text-center">
+                    <h3>Testimonials </h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="quote2">
+                            <div>
+                                <img src="images/testimonials/1.jpg" alt="" />
+                                <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live."</p>
+                                <span class="author">Simab Dave - Web Designer</span>
+                            </div>
+                            <div>
+                                <img src="images/testimonials/2.jpg" alt="" />
+                                <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live far from the countries Vokalia."</p>
+                                <span class="author">Johnthan Doe - UX Designer</span>
+                            </div>
+                            <div>
+                                <img src="images/testimonials/1.jpg" alt="" />
+                                <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. "</p>
+                                <span class="author">Maccy Doe - Front End</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space100"></div>
+            </div>
+        </div>
+
+        <!-- Faq -->
+        <div class="container" id="faq">
+            <div class="about-inline text-center">
+                <h3>Frequently Asked Questions </h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="faq">
+                        <h4> <span>~</span> Is Foodera Bread really baked fresh each day?</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="faq">
+                        <h4> <span>~</span> Do you bake breads containing animal fats or products?</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="faq">
+                        <h4> <span>~</span> Can I order your products online?</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="faq">
+                        <h4> <span>~</span> When are you opening a shop near me?</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="space100"></div>
+        </div>
+
+        <!-- PARALLAX -->
+        <section class="parallax-content2 parallax2 text-center" data-stellar-background-ratio="0.4">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4>Baked fresh daily by bakers with passion.</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#" class="btn btn-lg btn-primary pull-left">Learn More <i class="icon-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PARALLAX -->
+        <section class="text-center">
+            <div class="cta-wrap subscribe-elt2 ">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h1>Hurry up! Subscribe our newsletter <br> and get<span> 25% Off</span></h1>
+                        <p>Limited time offer for this month. No credit card required.</p>
+
+                        <form class="intro-newsletter" action="#" id="invite" method="POST">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <input class="e-mail" placeholder="Email Address here" name="email" id="eaddress" data-validate="validate(required, email)" type="email">
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary btn-block" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="space80"></div>
+
+     <!-- FOOTER -->
+        <footer class="footer2" id="footer2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 footerP text-center">
+                        <a href="#">Register</a>
+                        <a href="#">Forum</a>
+                        <a href="#">Affiliate</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                    <div class="footer-social space30 text-center">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-dribbble"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Copyright -->
+        <div class="footer-copy">
+            <div class="container">
+                &copy; 2021. Foodera. All rights reserved.
+            </div>
+        </div>
+		
+		
+		
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" data-toggle="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+	  
+	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+	  <div class="cf2-wrap">
+	   
+                        <h2>Make Your Order Now!</h2>
+
+                        <div class="clearfix space40"></div>
+                        <form class="positioned" name="sentMessage" id="contactForm" action="https://demo.tutsflow.com/foodera/php/contact.php" method="post">
+                            <div class="row">
+							
+                                <div class="col-md-6 col-sm-6">
+                                    <input name="senderName" id="senderName" placeholder="Your Name" required type="text">
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <input name="senderEmail" id="senderEmail" placeholder="Email Address" required type="email">
+                                </div>
+                            </div>
+							
+                            <input name="address" id="address" placeholder="Address" required type="text">
+
+							<input placeholder="Zip Code" required type="number">
+							
+							<input placeholder="Mobile No." required type="number">
+							
+							
+						<select name="name" id="select" required="required">
+                        <option value=""> Rainbow Vegetable Sandwich - $10.50 </option>
+                        <option value="1"> Vegetarian Burger - $9.20 </option>
+                        <option value="2"> Raspberry Stuffed French Toast - $12.50 </option>
+                        
+                      </select>
+							
+
+                           
+                            <button type="submit" class="btn btn-primary btn-ico">Send Message<i class="fa fa-paper-plane-o"></i></button>
+                        </form>
+                        <div id="sendingMessage" class="statusMessage">
+                            <p><i class="fa fa-spin fa-cog"></i> Sending your message. Please wait...</p>
+                        </div>
+                        <div id="successMessage" class="successmessage">
+                            <p><span class="success-ico"></span> Thanks for sending your message! We'll get back to you shortly.</p>
+                        </div>
+                        <div id="failureMessage" class="errormessage">
+                            <p><span class="error-ico"></span> There was a problem sending your message. Please try again.</p>
+                        </div>
+                        <div id="incompleteMessage" class="statusMessage">
+                            <p><i class="fa fa-warning"></i> Please complete all the fields in the form before sending.</p>
+                        </div>
+                    </div>
+                </div>
+       </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <!-- JAVASCRIPT =============================-->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/vendors/slick/slick.min.js"></script>
+        <script src="js/vendors/jquery.easing.min.js"></script>
+        <script src="js/vendors/stellar.js"></script>
+        <script src="js/vendors/isotope/isotope.pkgd.js"></script>
+        <script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
+        <script src="js/vendors/mc/main.js"></script>
 </body>
+
+
+<!-- Mirrored from demo.tutsflow.com/foodera/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 12:32:50 GMT -->
 </html>
