@@ -18,58 +18,111 @@
 
     <!-- ICONS -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/ilmosys-icon.css">
 
     <!-- THEME CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .policy-container {
+            max-width: 900px;
+            background: #fff;
+            padding: 30px;
+            margin: 80px auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h3 {
+            color: #a82d49;
+            border-bottom: 2px solid #a82d49;
+            padding-bottom: 10px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            color: #a82d49;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            font-weight: bold;
+            color: #a82d49;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #a82d49;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-social a {
+            font-size: 20px;
+            color: #a82d49;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .footer-social a:hover {
+            color: #a82d49;
+        }
+    </style>
 </head>
 
 <body>
     <!-- HEADER -->
-    <header>
-        <nav class="navbar-inverse navbar-lg navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <a href="index.html" class="navbar-brand brand"><img src="images/logo.jpg" alt="CaterOrange Logo"></a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container" style="margin-top: 50px; text-align: center;">
-        <div class="about-inline text-center">
-            <h3>Deletion Process</h3>
-            <div class="about-inline" style="display: inline-block; text-align: left; max-width: 800px; width: 100%;">
-                <h3 style="color: #a82d49;">Circumstances for Deletion</h3>
+    
+
+    <!-- Policy Content -->
+    <div class="policy-container">
+        <h3>Deletion Process</h3>
+        
+        <h4>Circumstances for Deletion</h4>
+        <ul>
+            <li>• <strong>User Request:</strong> Users can request account deletion through our support team.
                 <ul>
-                    <li>• <strong>User Request:</strong> Users can request account deletion through our support team.
-                        <ul style="margin-right: 20px;">
-                            <li >📋 <i>Submit a request:</i> Fill the <a href="https://forms.gle/1MiNXDwgDa8nUoK49" target="_blank">Data Deletion Request Form</a>.</li>
-                            <li>📧 <i>Email Request:</i> Send email to <a href="mailto:tech@scaleorange.com"><strong>tech@scaleorange.com</strong></a> with the subject "<strong>Data Deletion Request</strong>" and details of your request.</li>
-                        </ul>
-                    </li>
-                    <li>• <strong>Policy Violations:</strong> If a user violates the terms and conditions, CaterOrange reserves the right to delete the user and withhold the entire balance of any remaining food deliveries pending.</li>
-                    <li>• <strong>Inactivity:</strong> Users who are inactive for beyond 2 years will be deleted from the database.</li>
-                    <li>• <strong>Legal Reasons:</strong> The website reserves the right to delete accounts for legal reasons (e.g., following a court order).</li>
+                    <li>• 📋 <i>Submit a request:</i> Fill the <a href="https://forms.gle/1MiNXDwgDa8nUoK49" target="_blank">Data Deletion Request Form</a>.</li>
+                    <li>• 📧 <i>Email Request:</i> Send email to <span class="contact-info"><a href="mailto:info@caterorange.com">info@caterorange.com</a></span> with the subject "<strong>Data Deletion Request</strong>" and details of your request.</li>
                 </ul>
-                
-                <h3 style="color: #a82d49;">Deletion Process</h3>
-                <ul>
-                    <li>• Users will be notified via email once their account has been deleted.</li>
-                </ul>
-                
-                <h3 style="color: #a82d49;">Data Retention</h3>
-                <ul>
-                    <li>• <strong>Orders and payments data</strong> will be retained by CaterOrange.</li>
-                    <li>• <strong>User details</strong> such as address, phone number, and email will be deleted.</li>
-                </ul>
-                
-                <h3 style="color: #a82d49;">Deletion Confirmation</h3>
-                <ul>
-                    <li>• Users can confirm their accounts have been deleted by signing up with the same email address post deletion.</li>
-                </ul>
-            </div>
-        </div>
-     
+            </li>
+            <li>• <strong>Policy Violations:</strong> If a user violates the terms and conditions, CaterOrange reserves the right to delete the user and withhold the entire balance of any remaining food deliveries pending.</li>
+            <li>• <strong>Inactivity:</strong> Users who are inactive for beyond 2 years will be deleted from the database.</li>
+            <li>• <strong>Legal Reasons:</strong> The website reserves the right to delete accounts for legal reasons (e.g., following a court order).</li>
+        </ul>
+        
+        <h4>Deletion Process</h4>
+        <ul>
+            <li>• Users will be notified via email once their account has been deleted.</li>
+        </ul>
+        
+        <h4>Data Retention</h4>
+        <ul>
+            <li>• <strong>Orders and payments data</strong> will be retained by CaterOrange.</li>
+            <li>• <strong>User details</strong> such as address, phone number, and email will be deleted.</li>
+        </ul>
+        
+        <h4>Deletion Confirmation</h4>
+        <ul>
+            <li>• Users can confirm their accounts have been deleted by signing up with the same email address post deletion.</li>
+        </ul>
     </div>
 
     <!-- FOOTER -->
