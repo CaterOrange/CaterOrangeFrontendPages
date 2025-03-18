@@ -6,70 +6,88 @@
     <title>Privacy Policy - CaterOrange</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CaterOrange Privacy Policy">
-    <meta name="keywords" content="caterorange, privacy, policy, food delivery">
-    <meta name="author" content="CaterOrange">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
 
-    <!-- FAVICON -->
     <link rel="icon" href="images/logo.jpg" type="image/png">
     <link rel="shortcut icon" href="images/logo.jpg" type="image/png">
 
-    <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <!-- ICONS -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/ilmosys-icon.css">
 
-    <!-- THEME CSS -->
     <link rel="stylesheet" href="css/style.css">
     
     <style>
+         body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+        }
         .policy-container {
-            padding: 40px 20px;
-            background: #f9f9f9;
-            border-radius: 10px;
-            margin: 20px 0 40px;
-        }
-        
-        .policy-wrapper {
             max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: #fff;
+            padding: 30px;
+            margin: 80px auto 30px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
-        
-        .policy-header {
+
+        .policy-title {
+            color: #a82d49;
+            text-align: center;
             margin-bottom: 30px;
             padding-bottom: 15px;
-            border-bottom: 1px solid #eee;
+            border-bottom: 2px solid #a82d49;
         }
-        
-        .policy-header h3 {
-            color: #333;
-            font-weight: 600;
+
+        /* Style for dynamically loaded content */
+        #policy-content ul {
+            list-style-type: none;
+            padding-left: 0;
         }
-        
-        .policy-header p {
-            color: #666;
-            margin-top: 10px;
+
+        #policy-content li, 
+        #policy-content p {
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
-        
-        #loading {
-            transition: opacity 0.3s ease;
+
+        #policy-content h3 {
+            color: #a82d49;
+            margin: 30px 0 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #a82d49;
+            display: inline-block;
         }
-        
+
+        /* Loading spinner */
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #a82d49;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+            margin: 30px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Mobile responsiveness */
         @media (max-width: 768px) {
             .policy-container {
-                padding: 20px 10px;
+                padding: 20px;
+                margin: 60px 15px 20px;
             }
         }
     </style>
 </head>
 
 <body>
-    <!-- HEADER -->
     <header>
         <nav class="navbar-inverse navbar-lg navbar-fixed-top">
             <div class="container">
@@ -80,17 +98,19 @@
         </nav>
     </header>
 
-    <!-- Policy Content -->
     <div class="container policy-container">
-        <h3 class="text-center">Privacy Policy</h3>
-        <p id="policy-content" class="text-muted text-center">Loading...</p>
+        <h2 class="policy-title">Privacy Policy</h2>
+        <div id="policy-content">
+            <div class="loader"></div>
+            <p class="text-center text-muted">Loading policy content...</p>
+        </div>    
     </div>
 
-    <!-- FOOTER -->
     <footer class="footer2 text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
+                    <h4>Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html#home">Home</a></li>
                         <li><a href="index.html#about">About Us</a></li>
@@ -99,12 +119,14 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
+                    <h4>Support</h4>
                     <ul class="footer-links">
                         <li><a href="index.html#faq">FAQ</a></li>
                         <li><a href="index.html#contact">Help & Support</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
+                    <h4>Policies</h4>
                     <ul class="footer-links">
                         <li><a href="shipping-policy.html">Shipping Policy</a></li>
                         <li><a href="terms-conditions.html">Terms & Conditions</a></li>
@@ -121,16 +143,14 @@
         </div>
     </footer>
 
-    <!-- Copyright -->
     <div class="footer-copy text-center">
         <div class="container">
             © 2025. CaterOrange. All rights reserved.
         </div>
     </div>
 
-    <!-- JavaScript to Fetch Policy Content -->
     <script>
-        fetch('https://raw.githubusercontent.com/CaterOrange/Website-T-C-and-Policies/refs/heads/main/PrivacyPolicy.html')
+        fetch('https://raw.githubusercontent.com/CaterOrange/Website-T-C-and-Policies/refs/heads/main/PrivacyPolicy.html?t='+ new Date().getTime())
             .then(response => response.text())
             .then(data => {
                 document.getElementById('policy-content').innerHTML = data;
@@ -141,7 +161,6 @@
             });
     </script>
 
-    <!-- JAVASCRIPT -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
